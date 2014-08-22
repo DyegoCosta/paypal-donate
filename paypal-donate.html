@@ -1,0 +1,17 @@
+<polymer-element name='paypal-donate' alt='PayPal - The safer, easier way to pay online!' language='en_US' size='large' attributes='organization-name email donation-id language currency fixed-amount alt size show-cc img-src' constructor='PaypalDonate'>
+  <template>
+    <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
+      <input type='hidden' name='cmd' value='_donations'>
+      <input type='hidden' name='business' value='{{email}}'>
+      <input type='hidden' name='lc' value='{{lc}}'>
+      <input type='hidden' name='item_name' value='{{['organization-name']}}'>
+      <input type='hidden' name='amount' value='{{['fixed-amount']}}'>
+      <input type='hidden' name='item_number' value='{{['donation-id']}}'>
+      <input type='hidden' name='no_note' value='0'>
+      <input type='hidden' name='currency_code' value='{{currency}}'>
+      <input type='hidden' name='bn' value='{{bn}}'>
+      <input type='image' src='{{['img-src']}}' border='0' name='submit' alt='{{alt}}'>
+    </form>
+  </template>
+  <script type='text/javascript' src='paypal-donate.js'></script>
+</polymer-element>

@@ -1,0 +1,26 @@
+{
+  "name": "paypal-donate",
+  "main": "paypal-donate.js",
+  "version": "0.0.1",
+  "authors": [
+    "Dyego Costa <dyego.costa@live.com>",
+    "Renan Carvalho <renansscarvalho@gmail.com>"
+  ],
+  "description": "Paypal donate button web component",
+  "keywords": [
+    "paypal",
+    "web-components",
+    "donate"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#>=0.3.0 <1.0.0"
+  }
+}
